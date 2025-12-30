@@ -35,11 +35,11 @@ void ritJson_addObject(char* buffer, char* key, void* value, ritJson_datatype_t 
     {
         case RITJSON_TYPE_INT8:
             val_str = (char*)calloc(4, 1);
-            snprintf(val_str, 4, "%d", *((int8_t*)value));
+            snprintf(val_str, 5, "%d", *((int8_t*)value));
             break;
         case RITJSON_TYPE_INT16:
             val_str = (char*)calloc(6, 1);
-            snprintf(val_str, 6, "%d", *((int16_t*)value));
+            snprintf(val_str, 7, "%d", *((int16_t*)value));
             break;
         case RITJSON_TYPE_INT32:
             val_str = (char*)calloc(11, 1);
@@ -47,11 +47,11 @@ void ritJson_addObject(char* buffer, char* key, void* value, ritJson_datatype_t 
             break;
         case RITJSON_TYPE_UINT8:
             val_str = (char*)calloc(4, 1);
-            snprintf(val_str, 4, "%u", *((uint8_t*)value));
+            snprintf(val_str, 5, "%u", *((uint8_t*)value));
             break;
         case RITJSON_TYPE_UINT16:
             val_str = (char*)calloc(6, 1);
-            snprintf(val_str, 6, "%u", *((uint16_t*)value));
+            snprintf(val_str, 7, "%u", *((uint16_t*)value));
             break;
         case RITJSON_TYPE_UINT32:
         case RITJSON_TYPE_INT:
